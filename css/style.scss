@@ -353,7 +353,7 @@ header
 }
 
 .header.active {
-
+    
     .nav{
     visibility: visible;
     }
@@ -361,6 +361,7 @@ header
         opacity: 1 ;
     }
     .nav-toggler {
+
         span{
             background-color: transparent;
         }
@@ -374,7 +375,11 @@ header
 }
 
 
+.hide-scrolling{
+    // height: 100vh;
+    overflow: hidden;
 
+}
 
 
 
@@ -695,6 +700,13 @@ responsive
     }
 }
 
+@media(min-width: 575px){
+    .contact-form, .contact-info{
+        width: 50%;
+        padding: 0, 15px;
+    }
+}
+
 @media(max-width: 575px){
     .home-text{
         h1{
@@ -717,4 +729,17 @@ responsive
        width: 50%;
        justify-content: flex-start;
     }
+
+    .contact-form, .contact-info{
+        display:inline-block;
+        order: 0;
+        padding: 0 5px;
+        font-size: x-small;
+    }
+    .contact-info{
+        .social-links{
+            width: 70%;
+        }
+    }
+    
 }
