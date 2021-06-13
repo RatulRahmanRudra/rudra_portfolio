@@ -377,8 +377,7 @@ header
 
 .hide-scrolling{
     // height: 100vh;
-    overflow: hidden;
-
+    overflow-y: hidden;
 }
 
 
@@ -442,7 +441,8 @@ home section
 
 
 /*---------
-about section
+about section 
+
 -------*/
 
 .about-img{
@@ -722,7 +722,7 @@ responsive
                 
 }
 
-@media (max-width: 470px) {
+@media (max-width: 530px) {
     .about-tabs{
        padding-left: 10px;
        flex-direction: column;
@@ -738,8 +738,35 @@ responsive
     }
     .contact-info{
         .social-links{
-            width: 70%;
+            width: 50%;
+            align-items: center;
         }
     }
     
+}
+
+@media(max-width: 350px){
+    .contact-form{
+        content-visibility: hidden;
+        order: 2;
+    }
+    .contact-info{
+        text-align: center;
+        width: 90%;
+        .contact-info-item, .social-links{
+            margin: auto;
+            margin-top: 20px;
+        }
+    }
+    .row h2{
+        font-weight: 300;
+        font-size: 30px;
+    }
+    .contact-form, .contact-info{
+        h2{
+            font-weight: 100;
+
+            font-size: 10px;
+        }
+    }
 }
