@@ -785,4 +785,18 @@ responsive
     font-size: 35px;
   }
 }
+
+@media (max-width: 470px) {
+  .about-tabs {
+    padding-left: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -703,12 +703,18 @@ responsive
             font-size: 18px;
         }
     }
-    .about-tabs{
-        font-size: 15px;
-    }
 
     .header .nav-inner ul li a{
         font-size: 35px;
     }
                 
+}
+
+@media (max-width: 470px) {
+    .about-tabs{
+       padding-left: 10px;
+       flex-direction: column;
+       width: 50%;
+       justify-content: flex-start;
+    }
 }
